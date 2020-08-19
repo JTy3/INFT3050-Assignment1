@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <!-- Splitting up the components of UI with sections for each horizontal chunk-->
-    <section>
+    <section class="container"> 
         <div class="row banner">
             <div class="col-lg-6">
                 <div class="banner-text">
@@ -19,20 +19,22 @@
         </div>
     </section>
 
-    <section>
-        <div class="row">
-            <div class="bg-white">
+    <section class="bg-white">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-6">
-                    <div class="banner-image">
+                    <div class="info-banner-image">
                         <img src="../Content/Images/WFH.svg">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="banner-text" style="float: right; text-align: right;">
+                    <div class="banner-text info-text">
                         <h1 class="grey-header">Who are we?</h1>
-                        <p class="content-text">Here at RoboHome we aim to offer state of the art 
+                        <p class="content-text">
+                            Here at RoboHome we aim to offer state of the art 
                             smart home technology to everyone. Making your life
-                            more efficient, quickly and seamlessly.</p>
+                            more efficient, quickly and seamlessly.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -40,5 +42,17 @@
     </section>
 
     <section>
+        <div class="container">
+            <div class="row">
+                <h1 class="white-header">Our Products</h1>
+            </div>
+            <div class="row">
+                
+            </div>
+            <div class="row">
+                <h2 class="white-subheader">See our whole range here</h2>
+                <button type="button" class="btn btn-primary btn-lg">View Products</button>
+            </div>
+        </div>
     </section>
 </asp:Content>

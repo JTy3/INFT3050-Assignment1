@@ -1,16 +1,24 @@
-﻿body {
+﻿
+/*BASE STYLES*/
+body {
     background: rgb(97,10,183);
     background-image: linear-gradient(203deg, rgba(97,10,183,1) 45%, rgba(24,150,246,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+section {
+    padding: 100px 0px 100px 0px;
+}
+
+/*FONT STYLES*/
 h1, h2, h3, p {
     color: #707070 !important;
 }
 
 .content-text {
     font-size: 24px !important;
+    text-align: left;
 }
 
 .white-header {
@@ -28,37 +36,39 @@ h1, h2, h3, p {
 .grey-header {
     font-size: 64px;
     font-weight: 600;
+    text-align: left;
 }
 
-.grey-subheader {
-    font-size: 46px;
-    font-weight: 200;
+.banner-text {
+    margin-top: 20%;
 }
 
-.body-content {
-    margin-top: 100px;
+/*BACKGROUND STYLES*/
+.bg-white {
+    background-color: white;
 }
 
 .banner {
     display: flex;
 }
 
-.banner-text {
-    margin-top: 120px;
-}
-
+/*IMAGE STYLES*/
 .banner-image img {
     width: auto;
     height: auto;
-    max-height: 600px;
-    max-width: 600px;
-    margin-bottom: 50px;
+    max-height: 800px;
+    max-width: 800px;
 }
 
+.info-banner-image img {
+    width: auto;
+    height: auto;
+    max-height: 800px;
+    max-width: 800px;
+}
+
+/*FOOTER STYLES*/
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: white;
     text-align: center;
