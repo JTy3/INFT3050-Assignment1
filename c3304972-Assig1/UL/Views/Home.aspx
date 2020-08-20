@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <!-- Splitting up the components of UI with sections for each horizontal chunk-->
-    <section class="container"> 
+    <section class="container">
         <div class="row banner">
             <div class="col-lg-6">
                 <div class="banner-text">
@@ -46,12 +46,22 @@
             <div class="row">
                 <h1 class="white-header">Our Products</h1>
             </div>
-            <div class="row">
-                
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <h2 class="white-subheader">See our whole range here</h2>
-                <button type="button" class="btn btn-primary btn-lg">View Products</button>
+                <button type="button" class="btn btn-outline-dark btn-lg">View Products</button>
             </div>
         </div>
     </section>
