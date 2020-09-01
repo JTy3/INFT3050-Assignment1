@@ -1,4 +1,11 @@
-﻿
+﻿li, ul {
+    color: #707070 !important;
+}
+
+a {
+    color: blue;
+}
+
 /*BASE STYLES*/
 body {
     background: rgb(97,10,183);
@@ -43,8 +50,12 @@ h1, h2, h3, p {
     text-align: left;
 }
 
-.banner-text {
+.banner-heading {
     margin-top: 20%;
+}
+
+.nav-link {
+    font-size: 18px !important;
 }
 
 /*BACKGROUND STYLES*/
@@ -54,15 +65,15 @@ h1, h2, h3, p {
 
 .banner {
     display: flex;
-    max-height: 600px;
+    max-height: 450px;
 }
 
 /*IMAGE STYLES*/
 .banner-image img {
     width: auto;
     height: auto;
-    max-height: 800px;
-    max-width: 800px;
+    max-height: 600px;
+    max-width: 600px;
 }
 
 .info-banner-image img {
@@ -70,11 +81,49 @@ h1, h2, h3, p {
     height: auto;
     max-height: 800px;
     max-width: 800px;
+
 }
 
+/* CONTENT-TILE SETTINGS*/
+.content-tile {
+    background-color: #fff;
+    padding: 10%;
+    -webkit-box-shadow: 30px 30px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 30px 30px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 30px 30px 5px 0px rgba(0,0,0,0.5);
+}
+
+/* PRODUCT CAROUSEL STYLES */
+.carousel-item {
+    width: 350px;
+    height: 500px;
+}
+
+.carousel-control-prev {
+    margin-left: -11%;
+}
+
+.carousel-control-next {
+    margin-right: -5%;
+}
 /*FOOTER STYLES*/
 footer {
+    border-top: solid 1px #707070;
     width: 100%;
     background-color: white;
-    text-align: center;
+    bottom: 0;
+}
+
+.footer-menu {
+    list-style: none;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.right-footer-menu {
+    float: right;
+    text-align: right;
+    margin-right: 10% !important;
+    font-size: 18px;
+    list-style: none;
 }

@@ -4,34 +4,43 @@
 
 <html>
 <head runat="server">
-    <title><%: Page.Title %> | RoboHome</title>
+    <title>RoboHome Official</title>
 
     <link rel="stylesheet" type="text/css" href="../Content/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <form runat="server">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="Home.aspx">RoboHome</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.aspx">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="About.aspx">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="Store.aspx">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.aspx">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.aspx">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Register.aspx">Register</a>
                     </li>
                 </ul>
             </div>
@@ -43,8 +52,34 @@
             </asp:ContentPlaceHolder>
         </div>
 
-        <footer>
-            <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="footer-menu">
+                        <li class="font-weight-bold">LINKS</li>
+                        <li><a href="About.aspx">About</a></li>
+                        <li><a href="Store.aspx">Store</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 text-center">
+                    <ul class="footer-menu">
+                        <li class="font-weight-bold">LEGAL</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="right-footer-menu">
+                        <li class="font-weight-bold">SOCIAL</li>
+                        <li><a href="facebook.com">Facebook</a></li>
+                        <li><a href="twitter.com">Twitter</a></li>
+                        <li><a href="instagram.com">Instagram</a></li>
+                        <li><a href="pinterest.com">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="ml-5 text-center">&copy; <%: DateTime.Now.Year %> - RoboHome Official Store</p>
         </footer>
     </form>
 </body>
