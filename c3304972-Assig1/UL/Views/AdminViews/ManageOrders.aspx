@@ -5,23 +5,20 @@
         <div class="row mt-5">
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="dashboard-tile text-center">
-                    <h3>Sales</h3>
-                    <h2>3</h2>
-                    <h5 class="text-center"><a href="#">Manage all Orders</a></h5>
+                    <h3>Delivered</h3>
+                    <h2>1</h2>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="dashboard-tile text-center">
-                    <h3>Users</h3>
-                    <h2>3</h2>
-                    <h5 class="text-center"><a href="#">Manage all Users</a></h5>
+                    <h3>In Progress</h3>
+                    <h2>1</h2>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="dashboard-tile text-center">
-                    <h3>Products</h3>
-                    <h2>4</h2>
-                    <h5 class="text-center"><a href="#">Manage all Items</a></h5>
+                    <h3>Not Sent</h3>
+                    <h2>1</h2>
                 </div>
             </div>
         </div>
@@ -29,7 +26,7 @@
             <div class="col-12">
                 <div class="notice-board">
                     <h1 class="text-center">Orders</h1>
-                    <h5 class="text-center"><a href="#">Manage all Orders</a></h5>
+                    <h5 class="text-center">Manage all Orders</h5>
                     <table class="table mt-3">
                         <thead>
                             <tr>
@@ -37,6 +34,7 @@
                                 <th scope="col">Customer</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">View Order</th>
+                                <th scope="col">Cancel/Edit Order</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -45,18 +43,21 @@
                                 <td>Jacob</td>
                                 <td><button type="button" class="btn btn-success" disabled>Delivered</button></td>
                                 <td><a href="#">View Order</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit/Cancel</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">002</th>
                                 <td>Mark</td>
                                 <td><button type="button" class="btn btn-warning" disabled>In Progress</button></td>
                                 <td><a href="#">View Order</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit/Cancel</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">003</th>
                                 <td>Larry</td>
                                 <td><button type="button" class="btn btn-danger" disabled>Not Sent</button></td>
                                 <td><a href="#">View Order</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit/Cancel</button></td>
                             </tr>
                         </tbody>
                     </table>

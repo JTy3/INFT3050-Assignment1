@@ -38,6 +38,7 @@
                                 <th scope="col">Customer</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">View Order</th>
+                                <th scope="col">Cancel/Edit Order</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,18 +47,21 @@
                                 <td>Jacob</td>
                                 <td><button type="button" class="btn btn-success" disabled>Delivered</button></td>
                                 <td><a href="#">View Order</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit/Cancel</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">002</th>
                                 <td>Mark</td>
                                 <td><button type="button" class="btn btn-warning" disabled>In Progress</button></td>
                                 <td><a href="#">View Order</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit/Cancel</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">003</th>
                                 <td>Larry</td>
                                 <td><button type="button" class="btn btn-danger" disabled>Not Sent</button></td>
                                 <td><a href="#">View Order</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit/Cancel</button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -76,6 +80,7 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Sold</th>
                                 <th scope="col">See Product</th>
+                                <th scope="col">Edit Product <span class="badge badge-success">Coming Soon</span></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -84,18 +89,21 @@
                                 <td>Jacob</td>
                                 <td>3</td>
                                 <td><a href="#">View Product</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">002</th>
                                 <td>Mark</td>
                                 <td>2</td>
                                 <td><a href="#">View Product</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">003</th>
                                 <td>Larry</td>
                                 <td>1</td>
                                 <td><a href="#">View Product</a></td>
+                                <td><button type="button" class="btn btn-primary" disabled>Edit</button></td>
                             </tr>
                         </tbody>
                     </table>

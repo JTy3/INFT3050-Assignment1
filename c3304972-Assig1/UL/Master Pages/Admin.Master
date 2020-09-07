@@ -17,7 +17,7 @@
     <form id="form1" runat="server">
 
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="Home.aspx">RoboHome Admin</a>
+            <a class="navbar-brand" href="/Admin">RoboHome Admin</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,13 +28,16 @@
                         <a class="nav-link" href="/Admin">Admin Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Admin/Users">Users</a>
+                        <a class="nav-link" href="/Admin/Orders">Orders</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/Admin/Items">Inventory</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Admin/Orders">Orders</a>
+                        <a class="nav-link" href="/Admin/Categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Users">Users</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Login">Logout</a>
@@ -55,7 +58,7 @@
                         <li><a href="About">About</a></li>
                         <li><a href="Store">Store</a></li>
                         <li><a href="Contact">Contact</a></li>
-                        <li><a href="Admin">Admin Login</a></li>
+                        <li><a href="/">Main Site</a></li>
                     </ul>
                 </div>
                 <div class="col-4 text-center">

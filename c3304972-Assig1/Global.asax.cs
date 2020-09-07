@@ -48,6 +48,16 @@ namespace c3304972_Assig1
                 "~/UL/Views/Register.aspx"
             );
             routes.MapPageRoute(
+                "ShoppingCart",
+                "Cart",
+                "~/UL/Views/ShoppingCart.aspx"
+            );
+            routes.MapPageRoute(
+                "Checkout",
+                "Checkout",
+                "~/UL/Views/Checkout.aspx"
+            );
+            routes.MapPageRoute(
                 "AdminRoute",
                 "Admin",
                 "~/UL/Views/AdminViews/Home.aspx"
@@ -66,6 +76,11 @@ namespace c3304972_Assig1
                 "ManageItems",
                 "Admin/Items",
                 "~/UL/Views/AdminViews/ManageItems.aspx"
+            );
+            routes.MapPageRoute(
+                "ManageCategories",
+                "Admin/Categories",
+                "~/UL/Views/AdminViews/ManageCategories.aspx"
             );
         }
     }

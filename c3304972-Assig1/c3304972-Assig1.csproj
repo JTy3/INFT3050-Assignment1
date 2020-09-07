@@ -72,6 +72,7 @@
     <Content Include="UL\Content\admin.css" />
     <Content Include="UL\Content\style.css" />
     <Content Include="UL\Views\AdminViews\Home.aspx" />
+    <Content Include="UL\Views\AdminViews\ManageCategories.aspx" />
     <Content Include="UL\Views\AdminViews\ManageOrders.aspx" />
     <Content Include="UL\Views\AdminViews\ManageItems.aspx" />
     <Content Include="UL\Views\AdminViews\ManageUsers.aspx" />
@@ -113,6 +114,13 @@
     </Compile>
     <Compile Include="UL\Views\AdminViews\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageCategories.aspx.cs">
+      <DependentUpon>ManageCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageCategories.aspx.designer.cs">
+      <DependentUpon>ManageCategories.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\AdminViews\ManageOrders.aspx.cs">
       <DependentUpon>ManageOrders.aspx</DependentUpon>
