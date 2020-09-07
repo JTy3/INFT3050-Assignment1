@@ -69,16 +69,21 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <None Include="Bundle.config" />
+    <Content Include="UL\Content\admin.css" />
     <Content Include="UL\Content\style.css" />
+    <Content Include="UL\Views\AdminViews\Home.aspx" />
+    <Content Include="UL\Views\AdminViews\ManageOrders.aspx" />
+    <Content Include="UL\Views\AdminViews\ManageItems.aspx" />
+    <Content Include="UL\Views\AdminViews\ManageUsers.aspx" />
+    <Content Include="UL\Views\Checkout.aspx" />
     <Content Include="UL\Views\Contact.aspx" />
     <Content Include="UL\Views\Logout.aspx" />
     <Content Include="UL\Views\Register.aspx" />
     <Content Include="UL\Views\Login.aspx" />
     <Content Include="UL\Views\LoggedInViews\EditAccount.aspx" />
-    <Content Include="UL\Views\LoggedInViews\ShoppingCart.aspx" />
+    <Content Include="UL\Views\ShoppingCart.aspx" />
     <Content Include="UL\Views\LoggedInViews\MyProducts.aspx" />
     <Content Include="UL\Views\LoggedInViews\OrderHistory.aspx" />
-    <Content Include="UL\Views\LoggedInViews\PaymentDetails.aspx" />
     <Content Include="UL\Views\Store.aspx" />
     <Content Include="UL\Views\About.aspx" />
     <Content Include="UL\Views\Home.aspx" />
@@ -89,12 +94,53 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UL\Master Pages\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Master Pages\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="UL\Master Pages\User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UL\Master Pages\User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageOrders.aspx.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageOrders.aspx.designer.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageItems.aspx.cs">
+      <DependentUpon>ManageItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageItems.aspx.designer.cs">
+      <DependentUpon>ManageItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -131,11 +177,11 @@
     <Compile Include="UL\Views\LoggedInViews\EditAccount.aspx.designer.cs">
       <DependentUpon>EditAccount.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UL\Views\LoggedInViews\ShoppingCart.aspx.cs">
+    <Compile Include="UL\Views\ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UL\Views\LoggedInViews\ShoppingCart.aspx.designer.cs">
+    <Compile Include="UL\Views\ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\LoggedInViews\MyProducts.aspx.cs">
@@ -151,13 +197,6 @@
     </Compile>
     <Compile Include="UL\Views\LoggedInViews\OrderHistory.aspx.designer.cs">
       <DependentUpon>OrderHistory.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UL\Views\LoggedInViews\PaymentDetails.aspx.cs">
-      <DependentUpon>PaymentDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UL\Views\LoggedInViews\PaymentDetails.aspx.designer.cs">
-      <DependentUpon>PaymentDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\Store.aspx.cs">
       <DependentUpon>Store.aspx</DependentUpon>
@@ -184,6 +223,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="UL\Master Pages\User.Master" />
+    <Content Include="UL\Master Pages\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -195,7 +235,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
     <Folder Include="Models\" />
-    <Folder Include="UL\Assets\js\" />
     <Folder Include="UL\Content\Images\" />
   </ItemGroup>
   <PropertyGroup>

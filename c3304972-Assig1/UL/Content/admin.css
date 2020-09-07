@@ -1,0 +1,146 @@
+﻿li, ul {
+    color: #707070 !important;
+}
+
+a {
+    color: blue;
+}
+
+/*BASE STYLES*/
+body {
+    background-color: white;
+}
+
+section {
+    padding: 100px 0px 100px 0px;
+}
+
+.container {
+    max-width: 1040px;
+}
+
+/*FONT STYLES*/
+h1, h2, h3, p {
+    color: #707070 !important;
+}
+
+.content-text {
+    font-size: 24px !important;
+    text-align: left;
+}
+
+.white-header {
+    color: white !important;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.white-subheader {
+    color: white !important;
+    font-size: 46px;
+    font-weight: 200;
+}
+
+.grey-header {
+    font-size: 64px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.banner-heading {
+    margin-top: 20%;
+}
+
+nav {
+    border-bottom: solid 1px #707070;
+}
+
+.nav-link {
+    font-size: 18px !important;
+}
+
+/*BACKGROUND STYLES*/
+.bg-white {
+    background-color: white;
+}
+
+.banner {
+    display: flex;
+    max-height: 450px;
+}
+
+/*IMAGE STYLES*/
+.banner-image img {
+    width: auto;
+    height: auto;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.info-banner-image img {
+    width: auto;
+    height: auto;
+    max-height: 800px;
+    max-width: 800px;
+
+}
+
+/*DASHBOARD STYLES*/
+.dashboard-tile {
+    background-color: #fff;
+    padding: 4%;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(112,112,112,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(112,112,112,1);
+    box-shadow: 0px 0px 5px 1px rgba(112,112,112,1);
+}
+
+.notice-board {
+    background-color: #fff;
+    padding: 4%;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(112,112,112,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(112,112,112,1);
+}
+
+/* CONTENT-TILE SETTINGS*/
+.content-tile {
+    background-color: #fff;
+    padding: 10%;
+    -webkit-box-shadow: 30px 30px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 30px 30px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 30px 30px 5px 0px rgba(0,0,0,0.5);
+}
+
+/* PRODUCT CAROUSEL STYLES */
+.carousel-item {
+    width: 350px;
+    height: 500px;
+}
+
+.carousel-control-prev {
+    margin-left: -11%;
+}
+
+.carousel-control-next {
+    margin-right: -5%;
+}
+/*FOOTER STYLES*/
+footer {
+    border-top: solid 1px #707070;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+}
+
+.footer-menu {
+    list-style: none;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.right-footer-menu {
+    float: right;
+    text-align: right;
+    margin-right: 10% !important;
+    font-size: 18px;
+    list-style: none;
+}

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace c3304972_Assig1.UL.Views
+namespace c3304972_Assig1.UL.Views.AdminViews
 {
-    public partial class PaymentDetailsPage : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

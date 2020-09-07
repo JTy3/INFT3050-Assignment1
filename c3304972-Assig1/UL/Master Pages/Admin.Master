@@ -1,12 +1,12 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="c3304972_Assig1.UL.Master_Pages.User" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="c3304972_Assig1.UL.Master_Pages.Admin" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>RoboHome Official</title>
+    <title>RoboHome Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Content/style.css">
+    <link rel="stylesheet" type="text/css" href="../Content/admin.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -14,10 +14,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form runat="server">
+    <form id="form1" runat="server">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="Home.aspx">RoboHome</a>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="Home.aspx">RoboHome Admin</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,33 +25,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/Admin">Admin Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="About">About</a>
+                        <a class="nav-link" href="/Admin/Users">Users</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Store">Store</a>
+                        <a class="nav-link" href="/Admin/Items">Inventory</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contact">Contact</a>
+                        <a class="nav-link" href="/Admin/Orders">Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Register">Register</a>
+                        <a class="nav-link" href="Login">Logout</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Body Block - Wrapped by container -->
-        <div class="body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="AdminContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
         <footer class="py-5">
             <div class="row">
                 <div class="col-4">
