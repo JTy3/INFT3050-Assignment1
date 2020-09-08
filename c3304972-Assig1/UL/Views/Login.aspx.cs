@@ -16,7 +16,9 @@ namespace c3304972_Assig1.UL.Views
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Store", false);
+            HttpContext.Current.Session["Username"] = txtUsername.Text;
+            HttpContext.Current.Session["Password"] = txtPassword.Text;
+            Response.Redirect("/");
         }
     }
 }

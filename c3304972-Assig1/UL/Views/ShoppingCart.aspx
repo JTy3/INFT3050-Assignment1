@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="c3304972_Assig1.UL.Views.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="c3304972_Assig1.UL.Views.ShoppingCartPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
