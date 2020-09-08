@@ -13,7 +13,7 @@
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-image">
-                    <img src="../Content/Images/HomeBanner.svg">
+                    <img src="UL/Content/Images/HomeBanner.svg">
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="info-banner-image">
-                        <img src="../Content/Images/WFH.svg">
+                        <img src="UL/Content/Images/WFH.svg">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">

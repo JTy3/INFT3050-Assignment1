@@ -13,5 +13,10 @@ namespace c3304972_Assig1.UL.Views
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Store", false);
+        }
     }
 }

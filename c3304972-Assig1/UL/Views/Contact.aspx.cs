@@ -13,5 +13,10 @@ namespace c3304972_Assig1.UL.Views
         {
 
         }
+
+        protected void contactButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("About", false);
+        }
     }
 }

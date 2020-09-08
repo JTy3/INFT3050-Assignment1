@@ -12,7 +12,7 @@
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-image">
-                    <img src="../Content/Images/Store.svg">
+                    <img src="UL/Content/Images/Store.svg">
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
             </div>
             <div class="row mt-5 justify-content-center">
                 <h1 class="white-header">See our whole range here
-                    <button class="btn btn-outline-light btn-lg">Shop Now</button></h1>
+                    <button class="btn btn-outline-light btn-lg">See All Items</button></h1>
             </div>
         </div>
     </section>

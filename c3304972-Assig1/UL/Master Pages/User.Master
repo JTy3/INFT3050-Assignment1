@@ -52,8 +52,8 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-
-        <button class="checkout-cta-btn"><a href="Cart"><i class="fas fa-cloud"></i></a></button>
+        
+        <a class="checkout-cta-btn" href="Cart"><img class="checkout-cta-img" src="UL/Content/Images/shopping-cart-icon.png"></a>
 
         <footer class="py-5">
             <div class="row">

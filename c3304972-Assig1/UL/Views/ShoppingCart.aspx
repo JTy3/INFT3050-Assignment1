@@ -6,14 +6,14 @@
     <section class="container">
         <div class="row banner">
             <div class="col-lg-6">
-                <div class="banner-text">
+                <div class="banner-text mt-5">
                     <h1 class="white-header">Cart</h1>
                     <h2 class="white-subheader">Edit your purchase</h2>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="banner-image">
-                    <img src="../Content/Images/HomeBanner.svg">
+                    <img src="UL/Content/Images/Cart.svg">
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                                         <div class="col-4">
                                             <img src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" class="card-img" alt="...">
                                             <label class="mt-1 text-center">Quantity</label>
-                                            <input type="number" value="1">
+                                            <input class="quantity" type="number" value="1">
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                         <div class="col-4">
                                             <img src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" class="card-img" alt="...">
                                             <label class="mt-1 text-center">Quantity</label>
-                                            <input type="number" value="1">
+                                            <input class="quantity" type="number" value="1">
                                         </div>
                                     </div>
                                 </div>
@@ -67,8 +67,8 @@
                                     <h2 class="grey-subheader">Total Amount</h2>
                                     <h1 class="grey-subheader">$298.00</h1>
                                     <p>Includes shipping and GST</p>
-                                    <button class="btn btn-success">Checkout Now</button>
-                                    <button class="btn btn-secondary">Empty Cart</button>
+                                    <a href="Checkout" class="btn btn-success">Checkout Now</a>
+                                    <a class="btn btn-secondary">Empty Cart</a>
                                     <p class="mt-4">Payment Methods</p>
                                     <img class="mr-2"
                                         src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"

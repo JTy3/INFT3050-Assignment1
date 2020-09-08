@@ -70,6 +70,7 @@
     <Content Include="Global.asax" />
     <None Include="Bundle.config" />
     <Content Include="UL\Content\admin.css" />
+    <Content Include="UL\Content\Images\shopping-cart-icon.png" />
     <Content Include="UL\Content\style.css" />
     <Content Include="UL\Views\AdminViews\Home.aspx" />
     <Content Include="UL\Views\AdminViews\ManageCategories.aspx" />
@@ -87,7 +88,9 @@
     <Content Include="UL\Views\LoggedInViews\OrderHistory.aspx" />
     <Content Include="UL\Views\Store.aspx" />
     <Content Include="UL\Views\About.aspx" />
-    <Content Include="UL\Views\Home.aspx" />
+    <Content Include="UL\Views\Home.aspx">
+      <BrowseToURL>Home</BrowseToURL>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -243,7 +246,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
     <Folder Include="Models\" />
-    <Folder Include="UL\Content\Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
