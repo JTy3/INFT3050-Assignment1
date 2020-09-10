@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UL/Master Pages/User.Master" AutoEventWireup="true" CodeBehind="OrderHistory.aspx.cs" Inherits="c3304972_Assig1.UL.Views.OrderHistory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <%-- Order History Page --%>
     <section class="container">
+        <%-- Header Banner --%>
         <div class="row banner">
             <div class="col-lg-6">
                 <div class="banner-text mt-5">
@@ -14,6 +16,8 @@
                 </div>
             </div>
         </div>
+        <%-- Header Banner Finish --%>
+        <%-- Order History Component --%>
         <div class="row">
             <div class="col-12">
                 <div id="orderPageTile" class="content-tile">
@@ -21,8 +25,10 @@
                         <div class="row justify-content-center">
                             <h1 class="grey-header mb-5">Order History</h1>
                         </div>
+                        <%-- Order History List --%>
                         <div class="row">
                             <div class="col-12">
+                                <%-- Order Item --%>
                                 <div class="neu-wrapper mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-8">
@@ -51,6 +57,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                <%-- Order Item Finish --%>
+                                <%-- Order Item --%>
                                 <div class="neu-wrapper mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-8">
@@ -79,11 +87,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                <%-- Order Item Finish --%>
                             </div>
                         </div>
+                        <%-- Order History List Finish --%>
                     </div>
                 </div>
             </div>
         </div>
+        <%-- Order History Component Finish --%>
     </section>
+    <%-- Order History Page --%>
 </asp:Content>

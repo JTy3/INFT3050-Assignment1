@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <%-- Register Section --%>
     <section>
         <div class="container">
             <div class="row">
@@ -11,11 +12,14 @@
                             <div class="row justify-content-center">
                                 <h1 class="grey-header">Register Here</h1>
                             </div>
+
+                            <%-- Compulsory Fields --%>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label>First Name</label>
                                         <asp:TextBox ID="txtFName" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <%-- Required Validation --%>
                                         <asp:RequiredFieldValidator ID="fName"
                                             runat="server" ControlToValidate="txtFName"
                                             CssClass="text-danger" Display="Dynamic"
@@ -30,6 +34,7 @@
                                     <div class="form-group">
                                         <label>Last Name</label>
                                         <asp:TextBox ID="txtLName" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <%-- Required Validation --%>
                                         <asp:RequiredFieldValidator ID="lName"
                                             runat="server" ControlToValidate="txtLName"
                                             CssClass="text-danger" Display="Dynamic"
@@ -40,6 +45,7 @@
                                     <div class="form-group">
                                         <label>Email Address</label>
                                         <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <%-- Required Validation --%>
                                         <asp:RequiredFieldValidator ID="email"
                                             runat="server" ControlToValidate="txtEmail"
                                             CssClass="text-danger" Display="Dynamic"
@@ -56,6 +62,7 @@
                                     <div class="form-group">
                                         <label>Password</label>
                                         <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <%-- Required Validation --%>
                                         <asp:RequiredFieldValidator ID="txtPass"
                                             runat="server" ControlToValidate="txtPassword"
                                             CssClass="text-danger" Display="Dynamic"
@@ -66,6 +73,7 @@
                                     <div class="form-group">
                                         <label>Re-type Password</label>
                                         <asp:TextBox ID="txtRePassword" runat="server" CssClass="form-control"></asp:TextBox>
+                                        <%-- Required Validation --%>
                                         <asp:RequiredFieldValidator ID="txtRePass"
                                             runat="server" ControlToValidate="txtRePassword"
                                             CssClass="text-danger" Display="Dynamic"
@@ -75,6 +83,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <%-- Compulsory Fields Finish--%>
+
+                            <%-- Optional Postage Fields --%>
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <div class="card mb-4">
@@ -115,6 +126,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <%-- Optional Postage Fields Finish--%>
+
+                                <%-- Optional Billing Fields --%>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <div class="card mb-4">
                                         <div class="card-header" id="billingOption">
@@ -146,6 +160,7 @@
                                                 <div class="form-group">
                                                     <label>Country</label>
                                                     <select class="form-control">
+                                                        <%-- Only offering two countries to try and condense the codebase --%>
                                                         <option value="Afghanistan">Australia</option>
                                                         <option value="Afghanistan">New Zealand</option>
                                                     </select>
@@ -155,17 +170,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <%-- Optional Billing Fields Finish --%>
+
+                            <%-- Submit Button and extra links --%>
                             <div class="row justify-content-center">
                                 <div class="form-group text-center">
                                     <asp:Button runat="server" id="btnRegister" Text="Log In" cssClass="btn btn-primary mb-2" OnClick="btnRegister_Click" />
                                     <p class="text-center">Already a member? <a href="Login">Login Here</a></p>
                                 </div>
                             </div>
+                            <%-- Submit Button and extra links Finish --%>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <%-- Register Section Finish --%>
 
 </asp:Content>

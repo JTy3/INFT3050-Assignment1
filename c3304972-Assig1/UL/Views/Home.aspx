@@ -2,33 +2,39 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- Splitting up the components of UI with sections for each horizontal chunk-->
+    <%-- Banner Section - Image and Text w/ gradient bg --%>
     <section class="container">
         <div class="row banner">
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-text">
+                    <%-- Home Banner Text --%>
                     <h1 class="white-header banner-heading">Welcome</h1>
                     <h2 class="white-subheader">To right now...</h2>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-image">
+                    <%-- Illustration Image --%>
                     <img src="UL/Content/Images/HomeBanner.svg">
                 </div>
             </div>
         </div>
     </section>
+    <%-- Banner Section Finish --%>
 
+    <%-- Info Section - Image and Text w/ white bg--%>
     <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="info-banner-image">
+                        <%-- Illustration Image --%>
                         <img src="UL/Content/Images/WFH.svg">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="banner-text info-text mt-5">
+                        <%-- Who are we text --%>
                         <h1 class="grey-header">Who are we?</h1>
                         <p class="content-text">
                             Here at RoboHome we aim to offer state of the art 
@@ -40,14 +46,23 @@
             </div>
         </div>
     </section>
+    <%-- Info Section Finish --%>
 
+    <%-- Shop Section - Featured Items and CTA to shop w/ gradient bg --%>
     <section>
         <div class="container">
+
             <div class="row mb-5 justify-content-center">
                 <h1 class="white-header">Our Products</h1>
             </div>
+
+            <%-- Product Carousel Wrapper --%>
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <%-- Product Carousel - This will be heavily enhanced and code will be shortened 
+                in Part 2. Please refer to documentation for further clarification. --%>
                 <div class="carousel-inner">
+
+                    <%-- First Carousel Frame --%>
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -82,6 +97,9 @@
                             </div>
                         </div>
                     </div>
+                    <%-- First Carousel Frame Finish --%>
+
+                    <%-- Second Carousel Frame --%>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -116,6 +134,9 @@
                             </div>
                         </div>
                     </div>
+                    <%-- Second Carousel Frame Finish --%>
+
+                    <%-- Third Carousel Frame --%>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
@@ -150,7 +171,12 @@
                             </div>
                         </div>
                     </div>
+                    <%-- Third Carousel Frame Finish --%>
+
                 </div>
+                <%-- Product Carousel Finish --%>
+
+                <%-- Carousel Control Arrows --%>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -159,11 +185,20 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <%-- Carousel Control Arrows Finish --%>
+
             </div>
+            <%-- Product Carousel Wrapper Finish --%>
+
+            <%-- Online Store CTA --%>
             <div class="row mt-5 justify-content-center">
                 <h2 class="white-subheader">See our whole range here
                     <button class="btn btn-outline-light btn-lg">Shop Now</button></h2>
             </div>
+            <%-- Online Store CTA Finish --%>
+
         </div>
     </section>
+    <%-- Shop Section Finish --%>
+
 </asp:Content>

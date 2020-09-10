@@ -8,21 +8,21 @@
                 <div class="dashboard-tile text-center">
                     <h3>Sales</h3>
                     <h2>3</h2>
-                    <h5 class="text-center"><a href="#">Manage all Orders</a></h5>
+                    <h5 class="text-center"><a href="Admin/Orders">Manage all Orders</a></h5>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="dashboard-tile text-center">
                     <h3>Users</h3>
                     <h2>3</h2>
-                    <h5 class="text-center"><a href="#">Manage all Users</a></h5>
+                    <h5 class="text-center"><a href="Admin/Users">Manage all Users</a></h5>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                 <div class="dashboard-tile text-center">
                     <h3>Products</h3>
                     <h2>4</h2>
-                    <h5 class="text-center"><a href="#">Manage all Items</a></h5>
+                    <h5 class="text-center"><a href="Admin/Items">Manage all Items</a></h5>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="col-12">
                 <div class="notice-board">
                     <h1 class="text-center">Orders</h1>
-                    <h5 class="text-center"><a href="#">Manage all Orders</a></h5>
+                    <h5 class="text-center"><a href="Admin/Orders">Manage all Orders</a></h5>
                     <table class="table mt-3">
                         <thead>
                             <tr>
@@ -72,7 +72,7 @@
             <div class="col-12">
                 <div class="notice-board">
                     <h1 class="text-center">Popular Products</h1>
-                    <h5 class="text-center"><a href="#">Manage all Products</a></h5>
+                    <h5 class="text-center"><a href="Admin/Items">Manage all Products</a></h5>
                     <table class="table mt-3">
                         <thead>
                             <tr>

@@ -11,10 +11,7 @@ namespace c3304972_Assig1.UL.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if ((HttpContext.Current.Session["Username"] != null) && (HttpContext.Current.Session["Username"] != null))
-            {
 
-            }
         }
     }
 }

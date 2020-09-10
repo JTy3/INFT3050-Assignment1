@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UL/Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="c3304972_Assig1.UL.Views.Checkout" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <%-- Checkout Page --%>
     <section class="container">
+        <%-- Header Banner --%>
         <div class="row banner">
             <div class="col-lg-6">
                 <div class="banner-text mt-5">
@@ -15,11 +18,14 @@
                 </div>
             </div>
         </div>
+        <%-- Header Banner Finish --%>
+        <%-- Checkout Component --%>
         <div class="row mt-5">
             <div class="col-12">
                 <div class="content-tile">
                     <div class="container">
                         <div class="row">
+                            <%-- Product List --%>
                             <div class="col-12">
                                 <div class="neu-wrapper mb-3">
                                     <div class="row no-gutters">
@@ -62,6 +68,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <%-- Product List Finish --%>
+                            <%-- Payment Process --%>
                             <div class="col-12">
                                 <div class="pt-4 neu-wrapper payment-methods">
                                     <div class="row container">
@@ -114,10 +122,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <%-- Payment Process Finish --%>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <%-- Checkout Component Finish --%>
     </section>
+    <%-- Checkout Page --%>
+
 </asp:Content>

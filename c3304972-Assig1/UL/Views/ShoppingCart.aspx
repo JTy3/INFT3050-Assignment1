@@ -2,8 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- Splitting up the components of UI with sections for each horizontal chunk-->
+    <%-- Shopping Cart Page --%>
     <section class="container">
+        <%-- Banner Header --%>
         <div class="row banner">
             <div class="col-lg-6">
                 <div class="banner-text mt-5">
@@ -17,12 +18,15 @@
                 </div>
             </div>
         </div>
+        <%-- Shopping Cart Info --%>
         <div class="row mt-5">
             <div class="col-12">
                 <div class="content-tile">
                     <div class="container">
                         <div class="row">
+                            <%-- Product List --%>
                             <div class="col-7">
+                                <%-- Product Item --%>
                                 <div class="neu-wrapper mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-8">
@@ -42,6 +46,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                <%-- Product Item Finish --%>
+                                <%-- Product Item --%>
                                 <div class="neu-wrapper mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-8">
@@ -61,7 +67,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <%-- Product Item Finish --%>
                             </div>
+                            <%-- Prices and Payment Methods --%>
                             <div class="col-5">
                                 <div class="pt-4 neu-wrapper payment-methods">
                                     <h2 class="grey-subheader">Total Amount</h2>
@@ -84,4 +92,6 @@
             </div>
         </div>
     </section>
+    <%-- End of Shopping Cart Page --%>
+
 </asp:Content>

@@ -1,9 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="c3304972_Assig1.UL.Master_Pages.Admin" %>
 
+<%-- Master Page for User Interface --%>
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
+    <%-- Including all settings needed in head of page - here is where I include Bootstrap via CDN --%>
     <title>RoboHome Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Content/admin.css">
@@ -14,9 +17,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
     <form id="form1" runat="server">
 
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Code -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/Admin">RoboHome Admin</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,25 +50,31 @@
                 </ul>
             </div>
         </nav>
+        <!-- Navbar Code Finish -->
 
-        <div>
-            <asp:ContentPlaceHolder ID="AdminContent" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        <!-- Body Block -->
+        <asp:ContentPlaceHolder ID="AdminContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- Body Block Finish -->
+
+        <!-- Footer Code -->
         <footer class="py-5">
             <div class="row">
                 <div class="col-4">
                     <ul class="footer-menu">
                         <li class="font-weight-bold">LINKS</li>
+                        <!-- Site Links + Admin page link -->
                         <li><a href="About">About</a></li>
                         <li><a href="Store">Store</a></li>
                         <li><a href="Contact">Contact</a></li>
                         <li><a href="/">Main Site</a></li>
+                        <!-- Get to Admin Dashboard from here! -->
                     </ul>
                 </div>
                 <div class="col-4 text-center">
                     <ul class="footer-menu">
                         <li class="font-weight-bold">LEGAL</li>
+                        <!-- Doesn't link anywhere just for looks -->
                         <li>Terms and Conditions</li>
                         <li>Privacy Policy</li>
                     </ul>
@@ -71,15 +82,19 @@
                 <div class="col-4">
                     <ul class="right-footer-menu">
                         <li class="font-weight-bold">SOCIAL</li>
-                        <li><a href="facebook.com">Facebook</a></li>
-                        <li><a href="twitter.com">Twitter</a></li>
-                        <li><a href="instagram.com">Instagram</a></li>
-                        <li><a href="pinterest.com">Pinterest</a></li>
+                        <!-- Generic Social Links + my personal github -->
+                        <li><a href="https://facebook.com/">Facebook</a></li>
+                        <li><a href="https://github.com/JTy3">GitHub</a></li>
+                        <li><a href="https://instagram.com/">Instagram</a></li>
+                        <li><a href="https://pinterest.com/">Pinterest</a></li>
                     </ul>
                 </div>
             </div>
             <p class="ml-5 text-center">&copy; <%: DateTime.Now.Year %> - RoboHome Official Store</p>
+            <!-- Grabbing current year -->
         </footer>
+        <!-- Footer Code Finish -->
     </form>
 </body>
 </html>
+
