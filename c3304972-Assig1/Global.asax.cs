@@ -35,7 +35,17 @@ namespace c3304972_Assig1
             routes.MapPageRoute(
                 "StoreRoute",
                 "Store",
-                "~/UL/Views/Store.aspx"
+                "~/UL/Views/Store/StoreHome.aspx"
+            );
+            routes.MapPageRoute(
+                "ProductRoute",
+                "Product",
+                "~/UL/Views/Store/Product.aspx"
+            );
+            routes.MapPageRoute(
+                "ProductListRoute",
+                "ProductList",
+                "~/UL/Views/Store/ProductList.aspx"
             );
             routes.MapPageRoute(
                 "LoginRoute",
@@ -65,21 +75,26 @@ namespace c3304972_Assig1
             routes.MapPageRoute(
                 "EditAccount",
                 "EditAccount",
-                "~/UL/Views/EditAccount.aspx"
+                "~/UL/Views/AuthViews/EditAccount.aspx"
             );
             routes.MapPageRoute(
                 "MyProducts",
                 "MyProducts",
-                "~/UL/Views/MyProducts.aspx"
+                "~/UL/Views/AuthViews/MyProducts.aspx"
             );
             routes.MapPageRoute(
                 "OrderHistory",
                 "OrderHistory",
-                "~/UL/Views/OrderHistory.aspx"
+                "~/UL/Views/AuthViews/OrderHistory.aspx"
             );
             routes.MapPageRoute(
-                "AdminRoute",
-                "Admin",
+               "AdminRoute",
+               "Admin",
+               "~/UL/Views/AdminViews/AdminLogin.aspx"
+            );
+            routes.MapPageRoute(
+                "AdminHomeRoute",
+                "AdminHome",
                 "~/UL/Views/AdminViews/Home.aspx"
             );
             routes.MapPageRoute(
@@ -101,6 +116,11 @@ namespace c3304972_Assig1
                 "ManageCategories",
                 "Admin/Categories",
                 "~/UL/Views/AdminViews/ManageCategories.aspx"
+            );
+            routes.MapPageRoute(
+                "NotFoundError",
+                "NotFound",
+                "~/UL/Views/ErrorPages/NotFound.aspx"
             );
         }
     }

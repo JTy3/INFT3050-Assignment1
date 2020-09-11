@@ -14,7 +14,7 @@
             <div class="col-lg-6">
                 <div class="banner-image">
                     <%-- Illustration Image --%>
-                    <img src="UL/Content/Images/Contact.svg">
+                    <img src="../../Images/Contact.svg">
                 </div>
             </div>
         </div>

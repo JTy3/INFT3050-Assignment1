@@ -15,7 +15,7 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-image">
                     <%-- Illustration Image --%>
-                    <img src="UL/Content/Images/HomeBanner.svg">
+                    <img src="../../Images/HomeBanner.svg">
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="info-banner-image">
                         <%-- Illustration Image --%>
-                        <img src="UL/Content/Images/WFH.svg">
+                        <img src="../../Images/WFH.svg">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -67,7 +67,7 @@
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card 1</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -77,7 +77,7 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card 2</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card 3</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -104,7 +104,7 @@
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card 4</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -114,7 +114,7 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card 5</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -124,7 +124,7 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card 6</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -135,44 +135,6 @@
                         </div>
                     </div>
                     <%-- Second Carousel Frame Finish --%>
-
-                    <%-- Third Carousel Frame --%>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 7</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 8</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card 9</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <%-- Third Carousel Frame Finish --%>
-
                 </div>
                 <%-- Product Carousel Finish --%>
 
@@ -191,9 +153,9 @@
             <%-- Product Carousel Wrapper Finish --%>
 
             <%-- Online Store CTA --%>
-            <div class="row mt-5 justify-content-center">
+            <div class="row justify-content-center">
                 <h2 class="white-subheader">See our whole range here
-                    <button class="btn btn-outline-light btn-lg">Shop Now</button></h2>
+                    <a href="Store" class="btn btn-outline-light btn-lg">Shop Now</a></h2>
             </div>
             <%-- Online Store CTA Finish --%>
 

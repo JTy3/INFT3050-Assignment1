@@ -69,15 +69,16 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <None Include="Bundle.config" />
-    <Content Include="UL\Content\admin.css" />
-    <Content Include="UL\Content\Images\About.svg" />
-    <Content Include="UL\Content\Images\background.svg" />
-    <Content Include="UL\Content\Images\Contact.svg" />
-    <Content Include="UL\Content\Images\menu-cart.png" />
-    <Content Include="UL\Content\Images\Products.svg" />
-    <Content Include="UL\Content\Images\settings.png" />
-    <Content Include="UL\Content\Images\shopping-cart-icon.png" />
-    <Content Include="UL\Content\style.css" />
+    <Content Include="CSS\admin.css" />
+    <Content Include="Images\About.svg" />
+    <Content Include="Images\background.svg" />
+    <Content Include="Images\Contact.svg" />
+    <Content Include="Images\menu-cart.png" />
+    <Content Include="Images\Products.svg" />
+    <Content Include="Images\settings.png" />
+    <Content Include="Images\shopping-cart-icon.png" />
+    <Content Include="CSS\style.css" />
+    <Content Include="UL\Views\AdminViews\AdminLogin.aspx" />
     <Content Include="UL\Views\AdminViews\Home.aspx" />
     <Content Include="UL\Views\AdminViews\ManageCategories.aspx" />
     <Content Include="UL\Views\AdminViews\ManageOrders.aspx" />
@@ -85,14 +86,18 @@
     <Content Include="UL\Views\AdminViews\ManageUsers.aspx" />
     <Content Include="UL\Views\Checkout.aspx" />
     <Content Include="UL\Views\Contact.aspx" />
-    <Content Include="UL\Views\EditAccount.aspx" />
+    <Content Include="UL\Views\AuthViews\EditAccount.aspx" />
+    <Content Include="UL\Views\ErrorPages\DefaultError.aspx" />
+    <Content Include="UL\Views\ErrorPages\NotFound.aspx" />
     <Content Include="UL\Views\Logout.aspx" />
-    <Content Include="UL\Views\MyProducts.aspx" />
-    <Content Include="UL\Views\OrderHistory.aspx" />
+    <Content Include="UL\Views\AuthViews\MyProducts.aspx" />
+    <Content Include="UL\Views\AuthViews\OrderHistory.aspx" />
     <Content Include="UL\Views\Register.aspx" />
     <Content Include="UL\Views\Login.aspx" />
     <Content Include="UL\Views\ShoppingCart.aspx" />
-    <Content Include="UL\Views\Store.aspx" />
+    <Content Include="UL\Views\Store\Product.aspx" />
+    <Content Include="UL\Views\Store\ProductList.aspx" />
+    <Content Include="UL\Views\Store\StoreHome.aspx" />
     <Content Include="UL\Views\About.aspx" />
     <Content Include="UL\Views\Home.aspx">
       <BrowseToURL>Home</BrowseToURL>
@@ -116,6 +121,13 @@
     </Compile>
     <Compile Include="UL\Master Pages\User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\AdminViews\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\AdminViews\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -166,12 +178,26 @@
     <Compile Include="UL\Views\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UL\Views\EditAccount.aspx.cs">
+    <Compile Include="UL\Views\AuthViews\EditAccount.aspx.cs">
       <DependentUpon>EditAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UL\Views\EditAccount.aspx.designer.cs">
+    <Compile Include="UL\Views\AuthViews\EditAccount.aspx.designer.cs">
       <DependentUpon>EditAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\ErrorPages\DefaultError.aspx.cs">
+      <DependentUpon>DefaultError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\ErrorPages\DefaultError.aspx.designer.cs">
+      <DependentUpon>DefaultError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\ErrorPages\NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\ErrorPages\NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
@@ -180,18 +206,18 @@
     <Compile Include="UL\Views\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UL\Views\MyProducts.aspx.cs">
+    <Compile Include="UL\Views\AuthViews\MyProducts.aspx.cs">
       <DependentUpon>MyProducts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UL\Views\MyProducts.aspx.designer.cs">
+    <Compile Include="UL\Views\AuthViews\MyProducts.aspx.designer.cs">
       <DependentUpon>MyProducts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UL\Views\OrderHistory.aspx.cs">
+    <Compile Include="UL\Views\AuthViews\OrderHistory.aspx.cs">
       <DependentUpon>OrderHistory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UL\Views\OrderHistory.aspx.designer.cs">
+    <Compile Include="UL\Views\AuthViews\OrderHistory.aspx.designer.cs">
       <DependentUpon>OrderHistory.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\Register.aspx.cs">
@@ -215,12 +241,26 @@
     <Compile Include="UL\Views\ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UL\Views\Store.aspx.cs">
-      <DependentUpon>Store.aspx</DependentUpon>
+    <Compile Include="UL\Views\Store\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UL\Views\Store.aspx.designer.cs">
-      <DependentUpon>Store.aspx</DependentUpon>
+    <Compile Include="UL\Views\Store\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\Store\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\Store\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Views\Store\StoreHome.aspx.cs">
+      <DependentUpon>StoreHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Views\Store\StoreHome.aspx.designer.cs">
+      <DependentUpon>StoreHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Views\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Store.aspx.cs" Inherits="c3304972_Assig1.UL.Views.Store" %>
+﻿<%@ Page Language="C#" MasterPageFile="../../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="StoreHome.aspx.cs" Inherits="c3304972_Assig1.UL.Views.StoreHome" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -14,7 +14,7 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-image">
                      <%-- Illustration Image --%>
-                    <img src="UL/Content/Images/Store.svg">
+                    <img src="../../Images/Store.svg">
                 </div>
             </div>
         </div>
@@ -31,9 +31,9 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card 1</h5>
+                            <h5 class="card-title">Example Card 1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
@@ -41,19 +41,19 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card 2</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Click Me!!</h5>
+                            <p class="card-text">This is what the product page will look like.</p>
+                            <a href="Product" class="btn btn-primary">See Product</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1289&q=80" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card 3</h5>
+                            <h5 class="card-title">Example Card 3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
@@ -82,9 +82,9 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://image.shutterstock.com/image-vector/example-signlabel-features-speech-bubble-260nw-1223219848.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Dining Room</h5>
+                            <h5 class="card-title text-center"><a href="ProductList">Dining Room</a></h5>
                         </div>
                     </div>
                 </div>

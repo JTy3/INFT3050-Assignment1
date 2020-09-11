@@ -14,7 +14,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="banner-image">
-                    <img src="UL/Content/Images/Cart.svg">
+                    <img src="../../Images/Cart.svg">
                 </div>
             </div>
         </div>
