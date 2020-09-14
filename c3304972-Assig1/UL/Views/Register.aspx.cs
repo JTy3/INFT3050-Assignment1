@@ -16,7 +16,7 @@ namespace c3304972_Assig1.UL.Views
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Store", false);
+            Response.Redirect("Login", false);
         }
     }
 }

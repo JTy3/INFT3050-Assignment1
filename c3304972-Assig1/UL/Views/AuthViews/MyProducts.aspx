@@ -9,7 +9,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="banner-image">
-                    <img src="UL/Content/Images/Products.svg">
+                    <img src="../../Images/Products.svg">
                 </div>
             </div>
         </div>

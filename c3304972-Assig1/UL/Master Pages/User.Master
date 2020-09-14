@@ -1,12 +1,15 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="c3304972_Assig1.UL.Master_Pages.User" %>
 
+<%-- Master Page for User Interface --%>
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
+    <%-- Including all settings needed in head of page - here is where I include Bootstrap via CDN --%>
     <title>RoboHome Official</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Content/style.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -18,12 +21,16 @@
     <div class="background-illustration">
         <form runat="server">
 
+            <!-- Navbar Code -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Navbar Brand to the left -->
                 <a class="navbar-brand" href="Home.aspx">RoboHome</a>
+                <!-- Mobile hamburger menu toggle -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Actual Menu -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -38,58 +45,73 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Contact">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Register">Register</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img width="30" height="30" src="UL/Content/Images/settings.png">
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="EditAccount">My Account</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="MyProducts">My Products</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="OrderHistory">My Orders</a>
-                            </div>
-                        </li>
+                        <asp:HyperLink ID="linkLogin"
+                            NavigateUrl="~/Login"
+                            CssClass="nav-link"
+                            Text="Login"
+                            runat="server" />
+                        <asp:HyperLink ID="linkRegister"
+                            NavigateUrl="~/Register"
+                            CssClass="nav-link"
+                            Text="Register"
+                            runat="server" />
+                        <asp:HyperLink ID="linkAccount"
+                            NavigateUrl="~/EditAccount"
+                            CssClass="nav-link"
+                            Text="Edit Account"
+                            runat="server" />
+                        <asp:HyperLink ID="linkProducts"
+                            NavigateUrl="~/MyProducts"
+                            CssClass="nav-link"
+                            Text="My Products"
+                            runat="server" />
+                        <asp:HyperLink ID="linkOrders"
+                            NavigateUrl="~/OrderHistory"
+                            CssClass="nav-link"
+                            Text="My Orders"
+                            runat="server" />
                         <li class="nav-item">
                             <a class="nav-link" href="Cart">
-                                <img width="30" height="30" src="UL/Content/Images/menu-cart.png"></a>
+                                <img width="30" height="30" src="Images/menu-cart.png"></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Logout">Logout</a>
-                        </li>
+                        <asp:HyperLink ID="linkLogout"
+                            NavigateUrl="~/Logout"
+                            CssClass="nav-link"
+                            Text="Logout"
+                            runat="server" />
                     </ul>
                 </div>
+                <!-- Actual Menu Finish -->
             </nav>
+            <!-- Navbar Code Finish -->
 
-            <!-- Body Block - Wrapped by container -->
-            <div class="body-content">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
+            <!-- Body Block -->
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Body Block Finish -->
 
+            <!-- Fixed Shopping Cart Button Bottom Right of Page -->
             <a class="checkout-cta-btn" href="Cart">
-                <img class="checkout-cta-img" src="UL/Content/Images/shopping-cart-icon.png"></a>
+                <img class="checkout-cta-img" src="../../Images/shopping-cart-icon.png"></a>
 
+            <!-- Footer Code -->
             <footer class="py-5">
                 <div class="row">
                     <div class="col-4">
                         <ul class="footer-menu">
                             <li class="font-weight-bold">LINKS</li>
+                            <!-- Site Links + Admin page link -->
                             <li><a href="About">About</a></li>
                             <li><a href="Store">Store</a></li>
                             <li><a href="Contact">Contact</a></li>
                             <li><a href="Admin">Admin Login</a></li>
+                            <!-- Get to Admin Dashboard from here! -->
                         </ul>
                     </div>
                     <div class="col-4 text-center">
                         <ul class="footer-menu">
                             <li class="font-weight-bold">LEGAL</li>
+                            <!-- Doesn't link anywhere just for looks -->
                             <li>Terms and Conditions</li>
                             <li>Privacy Policy</li>
                         </ul>
@@ -97,6 +119,7 @@
                     <div class="col-4">
                         <ul class="right-footer-menu">
                             <li class="font-weight-bold">SOCIAL</li>
+                            <!-- Generic Social Links + my personal github -->
                             <li><a href="https://facebook.com/">Facebook</a></li>
                             <li><a href="https://github.com/JTy3">GitHub</a></li>
                             <li><a href="https://instagram.com/">Instagram</a></li>
@@ -105,7 +128,9 @@
                     </div>
                 </div>
                 <p class="ml-5 text-center">&copy; <%: DateTime.Now.Year %> - RoboHome Official Store</p>
+                <!-- Grabbing current year -->
             </footer>
+            <!-- Footer Code Finish -->
         </form>
     </div>
 </body>

@@ -11,9 +11,16 @@ namespace c3304972_Assig1.UL.Master_Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if ((HttpContext.Current.Session["Username"] != null) && (HttpContext.Current.Session["Username"] != null))
+            if (Session["LoggedIn"] != null)
             {
-
+                linkLogin.Visible = false;
+                linkRegister.Visible = false;
+            } else
+            {
+                linkLogout.Visible = false;
+                linkAccount.Visible = false;
+                linkOrders.Visible = false;
+                linkProducts.Visible = false;
             }
         }
     }

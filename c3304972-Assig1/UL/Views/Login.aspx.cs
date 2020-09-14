@@ -16,9 +16,13 @@ namespace c3304972_Assig1.UL.Views
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            HttpContext.Current.Session["Username"] = txtUsername.Text;
-            HttpContext.Current.Session["Password"] = txtPassword.Text;
-            Response.Redirect("/");
+            if (txtUsername.Text == "user" && txtPassword.Text == "user")
+            {
+                Session["LoggedIn"] = true;
+                Session["UserId"] = 001;
+                Session["UserName"] = "Mark the Marker";
+                Response.Redirect("Store");
+            }
         }
     }
 }

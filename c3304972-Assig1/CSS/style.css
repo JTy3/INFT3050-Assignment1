@@ -15,7 +15,7 @@ body {
 }
 
 .background-illustration {
-    background-image: url(Images/background.svg);
+    background-image: url(../Images/background.svg);
     background-repeat: no-repeat;
     background-position: 0% 50px;
     background-size: 2800px 2400px;
