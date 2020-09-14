@@ -43,6 +43,11 @@ namespace c3304972_Assig1
                 "~/UL/Views/Login.aspx"
             );
             routes.MapPageRoute(
+                "LogoutRoute",
+                "Logout",
+                "~/UL/Views/Logout.aspx"
+            );
+            routes.MapPageRoute(
                 "RegisterRoute",
                 "Register",
                 "~/UL/Views/Register.aspx"
@@ -56,6 +61,21 @@ namespace c3304972_Assig1
                 "Checkout",
                 "Checkout",
                 "~/UL/Views/Checkout.aspx"
+            );
+            routes.MapPageRoute(
+                "EditAccount",
+                "EditAccount",
+                "~/UL/Views/EditAccount.aspx"
+            );
+            routes.MapPageRoute(
+                "MyProducts",
+                "MyProducts",
+                "~/UL/Views/MyProducts.aspx"
+            );
+            routes.MapPageRoute(
+                "OrderHistory",
+                "OrderHistory",
+                "~/UL/Views/OrderHistory.aspx"
             );
             routes.MapPageRoute(
                 "AdminRoute",

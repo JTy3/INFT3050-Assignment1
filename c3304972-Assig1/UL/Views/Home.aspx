@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="c3304972_Assig1.UL.Views.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="c3304972_Assig1.UL.Views.Home" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -13,7 +13,7 @@
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div class="banner-image">
-                    <img src="../Content/Images/HomeBanner.svg">
+                    <img src="UL/Content/Images/HomeBanner.svg">
                 </div>
             </div>
         </div>
@@ -24,11 +24,11 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="info-banner-image">
-                        <img src="../Content/Images/WFH.svg">
+                        <img src="UL/Content/Images/WFH.svg">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <div class="banner-text info-text">
+                    <div class="banner-text info-text mt-5">
                         <h1 class="grey-header">Who are we?</h1>
                         <p class="content-text">
                             Here at RoboHome we aim to offer state of the art 

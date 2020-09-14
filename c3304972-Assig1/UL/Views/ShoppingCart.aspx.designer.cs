@@ -11,7 +11,7 @@ namespace c3304972_Assig1.UL.Views
 {
 
 
-    public partial class WebForm1
+    public partial class ShoppingCartPage
     {
     }
 }

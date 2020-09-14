@@ -1,7 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="c3304972_Assig1.UL.Views.RegisterPage" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UL/Master Pages/User.Master" AutoEventWireup="true" CodeBehind="EditAccount.aspx.cs" Inherits="c3304972_Assig1.UL.Views.EditAccount" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section>
         <div class="container">
             <div class="row">
@@ -9,8 +7,9 @@
                     <div class="content-tile">
                         <div class="container">
                             <div class="row justify-content-center">
-                                <h1 class="grey-header">Register Here</h1>
+                                <h1 class="grey-header">My Account</h1>
                             </div>
+                            <p class="content-text text-center mb-4">Edit Your Details</p>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group">
@@ -157,8 +156,7 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="form-group text-center">
-                                    <asp:Button runat="server" id="btnRegister" Text="Log In" cssClass="btn btn-primary mb-2" OnClick="btnRegister_Click" />
-                                    <p class="text-center">Already a member? <a href="Login">Login Here</a></p>
+                                    <asp:Button runat="server" id="btnUpdateAccount" Text="Update Details" cssClass="btn btn-success mb-2" />
                                 </div>
                             </div>
                         </div>
@@ -167,5 +165,4 @@
             </div>
         </div>
     </section>
-
 </asp:Content>

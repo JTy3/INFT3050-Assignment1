@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="c3304972_Assig1.UL.Views.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="c3304972_Assig1.UL.Views.ContactPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -12,7 +12,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="banner-image">
-                    <img src="../Content/Images/HomeBanner.svg">
+                    <img src="UL/Content/Images/Contact.svg">
                 </div>
             </div>
         </div>
@@ -23,23 +23,35 @@
             <div class="row">
                 <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Name</label>
-                        <input type="text" class="form-control">
+                        <label>Name</label>
+                        <asp:TextBox ID="txtName" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="contactName"
+                            runat="server" ControlToValidate="txtName"
+                            CssClass="text-danger" Display="Dynamic"
+                            ErrorMessage="Contact Name">
+                            Please enter a name
+                        </asp:RequiredFieldValidator>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp">
+                        <label>Email Address</label>
+                        <asp:TextBox ID="txtContactEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="contactEmail"
+                            runat="server" ControlToValidate="txtContactEmail"
+                            CssClass="text-danger" Display="Dynamic"
+                            ErrorMessage="Contact Email">
+                            Please enter an email
+                        </asp:RequiredFieldValidator>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Phone</label>
-                        <input type="tel" class="form-control">
+                        <label for="exampleInputPassword1">Phone (Optional)</label>
+                        <asp:TextBox ID="txtContactNumber" runat="server" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Company (Optional)</label>
-                        <input type="text" class="form-control">
+                        <asp:TextBox ID="txtContactCompany" runat="server" CssClass="form-control"></asp:TextBox>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <asp:Button runat="server" id="contactButton" Text="Submit" cssClass="btn btn-primary" OnClick="contactButton_Click" />
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                     <div class="content-box address-map">

@@ -11,7 +11,7 @@ namespace c3304972_Assig1.UL.Views
 {
 
 
-    public partial class RegisterPage
+    public partial class EditAccount
     {
 
         /// <summary>
@@ -186,12 +186,12 @@ namespace c3304972_Assig1.UL.Views
         protected global::System.Web.UI.WebControls.TextBox billPost;
 
         /// <summary>
-        /// btnRegister control.
+        /// btnUpdateAccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegister;
+        protected global::System.Web.UI.WebControls.Button btnUpdateAccount;
     }
 }

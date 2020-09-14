@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="c3304972_Assig1.UL.Views.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="../Master Pages/User.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="c3304972_Assig1.UL.Views.AboutPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -12,7 +12,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="banner-image">
-                    <img src="../Content/Images/HomeBanner.svg">
+                    <img src="UL/Content/Images/About.svg">
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                     </p>
                     <p class="content-text">
                         We really appreciate you stopping by and hope we can assist you in your journey towards a smart home. If you would like to talk to someone
-                        from our dedicated sales team before making a purchase please reach out via our contact page <a href="Contact.aspx">here.</a>
+                        from our dedicated sales team before making a purchase please reach out via our contact page <a href="Contact">here.</a>
                     </p>
                 </div>
             </div>

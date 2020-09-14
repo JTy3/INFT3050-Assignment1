@@ -7,11 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace c3304972_Assig1.UL.Views
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((HttpContext.Current.Session["Username"] != null) && (HttpContext.Current.Session["Username"] != null))
+            {
 
+            }
         }
     }
 }
