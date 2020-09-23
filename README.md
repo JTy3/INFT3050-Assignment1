@@ -1,13 +1,10 @@
 # INFT3050 Web Programming Assignment
 
-A Web Application built by Jacob Tye for INFT3050. Both assignments will be delivered through this repo via release branches. 
+A Web Application built by Jacob Tye for INFT3050.
 
 `release/assig-1` - Will be the branch for assignment 1
-`release/assig-2` - Will be the branch for assignment 2
 
 Master will be merged into for whatever assignment is due next. 
-
-Example: On the due date for assignment one there will be a pull request from release/assig-1 --> master
 
 So if you are here to mark just use master :)
 
